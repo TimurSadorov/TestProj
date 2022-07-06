@@ -1,8 +1,6 @@
 name: .NET
 
 on:
-  push:
-    branches: HW*
   pull_request:
     branches: AllHW
 
@@ -30,4 +28,4 @@ jobs:
       if: success() || failure()
       with:
         name: test-results
-        path: HomeWork*/Hw*Tests/TestResults/*.trx
+        path: HomeWork*/HW*Tests/TestResults/*.trx
